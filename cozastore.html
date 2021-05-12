@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="tf-8">
+    <meta name="description" content="welcome to my website">
+    <title>reda_elklie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="fontawesome-free/css/all.min.css">
+
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!--bootstrap links-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+  </head>
+  <body>
+    <!-- start model search -->
+    <div class="modal-search" id="modalSearch">
+    <div class="container-search">
+        <button class="close-shearch" type="button" name="button" onclick="hiddSearch()">
+           <img src="img/icon-close1.png" alt="icon close">
+        </button>
+        <form class="form-search" action="index.html" method="post">
+          <button type="button" name="button"><i class="fa fa-search"></i></button>
+          <input type="search" name="" value="" placeholder="Search...">
+        </form>
+    </div>
+    </div>
+    <!-- end model search -->
+    <!-- start cart shop -->
+    <div class="cart-shop" id="cartShop">
+      <div class="blure-cart" onclick="hiddCartShop()"></div>
+      <div class="header-cart">
+        <div class="header-cart-title">
+          <span>Your Cart </span>
+          <img src="img/icon-close1.png" alt="icon close"  onclick="hiddCartShop()">
+        </div>
+        <div class="header-cart-content">
+           <ul class="menu-cart-header">
+             <li>
+                 <div class="header-cart-img">
+                    <img src="img/fuyy.op.jpg" alt="">
+                 </div>
+                 <div class="header-cart-text">
+                  <a href="#">White Shirt Pleat</a>
+                  <span>1 x </span>
+                 </div>
+             </li>
+             <li>
+                 <div class="header-cart-img">
+                    <img src="img/gh.jpg" alt="">
+                 </div>
+                 <div class="header-cart-text">
+                  <a href="#">White Shirt Pleat</a>
+                  <span>1 x </span>
+                 </div>
+             </li>
+             <li>
+                 <div class="header-cart-img">
+                    <img src="img/ot.jpg" alt="">
+                 </div>
+                 <div class="header-cart-text">
+                  <a href="#">White Shirt Pleat</a>
+                  <span>1 x  </span>
+                 </div>
+             </li>
+           </ul>
+           <div class="full">
+            <div class="header-cart-totale">
+              Total: $75.00
+            </div>
+            <div class="header-cart-buttons">
+                <a href="#">View Cart</a>
+                <a href="#">Check Out</a>
+            </div>
+           </div>
+        </div>
+      </div>
+    </div>
+  <header>
+  <div class="top-bar">
+    <div class="container">
+    <div class="left-top-bar">
+    <p>Free shipping for standard order over $100</p>
+    </div>
+    <div class="right-top-bar">
+      <ul>
+      <li><a href="#" style="border-left: 1px solid rgba(255,255,255,0.3);">Help & FAQs</a></li>
+      <li><a href="https://www.instagram.com/reda_elklie/">My Account</a></li>
+      <li><a href="#">EN</a></li>
+      <li><a href="#">USD</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <div class="header" id="navBar">
+  <div class="container">
+  <nav>
+      <div class="logo">
+       <a href="#">
+       <img src="img/re.jpg" alt="cozastore" width="100px" height="50px">
+       </a>
+      </div>
+      <div class="menu-desktop">
+       <ul>
+         <li class="active-menu"><a href="#" class="active">Home</a>
+             <ol>
+               <li><a href="#">reda elklie</a></li>
+               <li><a href="#">reda elklie</a></li>
+               <li><a href="#">reda elklie</a></li>
+             </ol>
+         </li>
+         <li><a href="#">Shop</a></li>
+         <li><a href="#">Features</a></li>
+         <li><a href="#">Blog</a></li>
+         <li><a href="#">About</a></li>
+         <li><a href="#">Contact</a></li>
+       </ul>
+      </div>
+      <div class="icons-desktop">
+       <ul>
+         <li><i class="fa fa-search" onclick="showSearch()"></i></li>
+         <li><i class="fas fa-shopping-cart" onclick="showCartShop()"></i></li>
+         <li><i class="far fa-heart"></i></li>
+       </ul>
+      </div>
+      <div class="btn-show-menu-mobile">
+         <button class="bars">
+            <i class="fas fa-bars"></i>
+         </button>
+      </div>
+  </nav>
+</div>
+</div>
+</header>
+<section class="section-slide">
+<div class="slider">
+  <div class="button">
+    <button class="btn-left" type="button" name="button"><i class="fas fa-caret-left" onclick="changeBackL()"></i></button>
+    <button class="btn-right" type="button" name="button"><i class="fas fa-caret-right" onclick="changeBackR()"></i></button>
+  </div>
+  <div class="container">
+   <div class="content">
+    <span>Reda store .</span>
+    <h1> new collection</h1>
+    <a href="#">SHOP NOW</a>
+   </div>
+  </div>
+</div>
+
+  </section>
+</header>
+<!-- start main -->
+<main>
+  <div class="sec-banner">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
+              <div class="block 1">
+                 <img src="img/banner-01.jpg" alt="">
+                 <a href="#">
+                   <div class="title">
+                       <h2>Women</h2>
+                       <span>Spring 2021</span>
+                   </div>
+                   <div class="text">
+                    <span>SHP NOW</span>
+                   </div>
+                 </a>
+              </div>
+        </div>
+        <div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
+          <div class="block 2">
+             <img src="img/banner-02.jpg" alt="">
+             <a href="#">
+               <div class="title">
+                 <h2>Men</h2>
+                 <span>Spring 2021</span>
+               </div>
+               <div class="text">
+                <span>SHP NOW</span>
+               </div>
+             </a>
+          </div>
+        </div>
+        <div class="col-md-6 col-xl-4 p-b-30 m-lr-auto">
+          <div class="block 3">
+             <img src="img/banner-03.jpg" alt="">
+             <a href="#">
+               <div class="title">
+                 <h2>Accesories</h2>
+                 <span>New trend</span>
+               </div>
+               <div class="text">
+                 <span>SHP NOW</span>
+               </div>
+             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <section class="prodacts">
+  <div class="container">
+  <div class="p-b-10">
+   <h3>Product Overview</h3>
+  </div>
+  <div class="buttons">
+    <div class="btn-anch">
+       <button type="button" name="button" class="btn-active">All Products</button>
+       <button type="button" name="button" class="women">Women</button>
+       <button type="button" name="button" class="men">Men</button>
+       <button type="button" name="button" class="bag">Bag</button>
+       <button type="button" name="button" class="shoes">Shoes</button>
+       <button type="button" name="button" class="whatches">Watches</button>
+    </div>
+    <div class="filter-search">
+      <div class="btnOne">
+        <i class="fas fa-chevron-down"></i>
+        <span>filter</span>
+      </div>
+      <div class="btnTow">
+        <i class="fa fa-search"></i>
+        <span>Search</span>
+      </div>
+    </div>
+  </div>
+  <!-- start panel-search -->
+  <div class="panel-search">
+    <button type="button" name="button">
+           <i class="fa fa-search"></i>
+    </button>
+    <input type="search" placeholder="Search">
+  </div>
+  <!-- end panel-search -->
+  <!--   start all filters      -->
+
+ <div class="all-filter row">
+    <!-- filter 1 -->
+    <div class="col-sm-6 col-md-4 col-lg-3">
+     <div class="filter Sort">
+      <div class="head">
+        <span>Sort By</span>
+      </div>
+        <ul>
+          <li><a href="#">Default</a></li>
+          <li><a href="#">Popularity</a></li>
+          <li><a href="#">Average rating</a></li>
+          <li><a href="#" class="active">Newness</a></li>
+          <li><a href="#">Price: Low to High</a></li>
+          <li><a href="#">Price: High to Low</a></li>
+        </ul>
+      </div>
+    </div>
+     <!-- filter 2 -->
+     <div class="col-sm-6 col-md-4 col-lg-3">
+     <div class="filter Price">
+      <div class="head">
+        <span>Price</span>
+      </div>
+        <ul>
+          <li><a href="#" class="active">All</li>
+          <li><a href="#">$0.00 - $50.00</a></li>
+          <li><a href="#">$50.00 - $100.00</a></li>
+          <li><a href="#">$100.00 - $150.00</a></li>
+          <li><a href="#">$150.00 - $200.00</a></li>
+          <li><a href="#">$200.00+</a></li>
+        </ul>
+     </div>
+     </div>
+     <!-- filter 3 -->
+     <div class="col-sm-6 col-md-4 col-lg-3">
+     <div class="filter Color">
+      <div class="head">
+        <span>Color</span>
+      </div>
+        <ul>
+          <li><i class="fas fa-circle black"></i> <a href="#">Black</a></li>
+          <li><i class="fas fa-circle blue"></i> <a href="#" class="active">Blue</a></li>
+          <li><i class="fas fa-circle grey"></i> <a href="#">Grey</a></li>
+          <li><i class="fas fa-circle green"></i> <a href="#">Green</a></li>
+          <li><i class="fas fa-circle red"></i> <a href="#">Red</a></li>
+          <li><i class="fas fa-circle white"></i> <a href="#">White</a></li>
+        </ul>
+     </div>
+    </div>
+     <!-- filter 4 -->
+     <div class="col-sm-6 col-md-4 col-lg-3">
+     <div class="filter Tags">
+      <div class="head">
+        <span>Tags</span>
+      </div>
+        <ul>
+          <li><a href="#">Fashion</a></li>
+          <li><a href="#">Lifestyle</a></li>
+          <li><a href="#">Denim</a></li>
+          <li><a href="#">Streetstyle</a></li>
+          <li><a href="#">Crafts</a></li>
+        </ul>
+      </div>
+     </div>
+ </div> <!-- end div all filter -->
+  <!--   end all filters      -->
+     <!---row all prodacut-->
+  <div class="row all-producks">
+    <!-- product 1-->
+  <div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+  <div class="product one">
+  <div class="img-anck">
+      <img src="img/product-01.jpg" alt="product">
+      <a href="#">Quick View</a>
+  </div>
+  <div class="price">
+    <div class="text-price">
+      <a href="#">Esprit Ruffle Shirt</a>
+      <span>$16.64</span>
+    </div>
+    <div class="heart">
+      <a href="#">
+         <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+         <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+      </a>
+    </div>
+  </div>
+  </div>
+  </div>
+  <!-- product 2-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product tow">
+<div class="img-anck">
+    <img src="img/product-02.jpg" alt="product">
+    <a href="#">Quick View</a>
+</div>
+<div class="price">
+  <div class="text-price">
+    <a href="#">Esprit Ruffle Shirt</a>
+    <span>$16.64</span>
+  </div>
+  <div class="heart">
+    <a href="#">
+      <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+      <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+    </a>
+  </div>
+</div>
+</div>
+</div>
+<!-- product 3-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product three">
+<div class="img-anck">
+  <img src="img/product-03.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 4-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product four">
+<div class="img-anck">
+  <img src="img/product-04.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 5-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product five">
+<div class="img-anck">
+  <img src="img/product-05.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 6-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product six">
+<div class="img-anck">
+  <img src="img/product-06.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 7-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product seven">
+<div class="img-anck">
+  <img src="img/product-07.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 8-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product eight">
+<div class="img-anck">
+  <img src="img/product-08.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 9-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product nine">
+<div class="img-anck">
+  <img src="img/product-09.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 10-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product ten">
+<div class="img-anck">
+  <img src="img/product-10.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 11-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product eleven">
+<div class="img-anck">
+  <img src="img/product-11.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 12-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product twelve">
+<div class="img-anck">
+  <img src="img/product-12.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 13-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product thirteen">
+<div class="img-anck">
+  <img src="img/product-13.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 14-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product fourteen">
+<div class="img-anck">
+  <img src="img/product-14.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 15-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product fifteen">
+<div class="img-anck">
+  <img src="img/product-15.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+<!-- product 16-->
+<div class="col-sm-6 col-md-4 col-lg-3 p-b-35">
+<div class="product sixteen">
+<div class="img-anck">
+  <img src="img/product-16.jpg" alt="product">
+  <a href="#">Quick View</a>
+</div>
+<div class="price">
+<div class="text-price">
+  <a href="#">Esprit Ruffle Shirt</a>
+  <span>$16.64</span>
+</div>
+<div class="heart">
+  <a href="#">
+    <img class="icon-heart1" src="img/icon-heart-01.png" alt="">
+    <img class="icon-heart2" src="img/icon-heart-02.png" alt="">
+  </a>
+</div>
+</div>
+</div>
+</div>
+  </div>  <!-- end all product -->
+  <div class="load-more"><!-- LOAD MORE -->
+       <a href="#">LOAD MORE</a>
+  </div>
+</div> <!-- end container-->
+</section>
+</main>
+<!-- end main -->
+<!-- start footer -->
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-sm-6 col-lg-3">
+<h4>CATEGORIES</h4>
+<ul>
+  <li><a href="#">Women</a></li>
+  <li><a href="#">Men</a></li>
+  <li><a href="#">Shoes</a></li>
+  <li><a href="#">Watches</a></li>
+</ul>
+</div>
+<!-- col 2 -->
+<div class="col-sm-6 col-lg-3">
+<h4>HELP</h4>
+<ul>
+  <li><a href="#">Track Order</a></li>
+  <li><a href="#">Returns</a></li>
+  <li><a href="#">Shipping</a></li>
+  <li><a href="#">FAQ</a></li>
+</ul>
+</div>
+<!-- col 3 -->
+<div class="col-sm-6 col-lg-3">
+<h4>GET IN TOUCH</h4>
+<p>Any questions? Let us know in store at 8th floor, 379 Hudson St, New York, NY 10018 or call us on +212652224291</p>
+<nav>
+  <a href="#"><i class="fab fa-facebook"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-pinterest"></i></a>
+</nav>
+</div>
+<!-- col 4 -->
+<div class="col-sm-6 col-lg-3 p-b-50">
+<h4>NEWSLETTER</h4>
+<form class="" action="index.html" method="post">
+  <input type="email" name="" placeholder="redaelklie@gmail.com">
+  <span class="focus-input"></span>
+</form>
+<div class="SUBSCRIBE">
+<button type="button" name="button">
+SUBSCRIBE
+</button>
+</div>
+</div>
+</div>
+<!----------->
+<div class="footer">
+  <div class="visa">
+      <a href="#"><img src="img/icon-pay-01.png" alt=""> </a>
+      <a href="#"><img src="img/icon-pay-02.png" alt=""> </a>
+      <a href="#"><img src="img/icon-pay-03.png" alt=""> </a>
+      <a href="#"><img src="img/icon-pay-04.png" alt=""> </a>
+      <a href="#"><img src="img/icon-pay-05.png" alt=""> </a>
+      <a href="#"><img src="img/icon-pay-06.png" alt=""> </a>
+  </div>
+  <div class="Copyright ">
+<p>Copyright ©2021 All rights reserved | This template is made with  by <a href="#">Manzar</a></p>
+  </div>
+</div>
+</div>
+</footer>
+
+<!-- end footer -->
+
+  <!-- dcript js -->
+  <script src="script.js">
+
+  </script>
+  <!--bootstrap script links -->
+  <script src="script/bootstrap.js">
+  <script src="script/bootstrap.min.js">
+
+  </script>
+  </body>
+</html>
